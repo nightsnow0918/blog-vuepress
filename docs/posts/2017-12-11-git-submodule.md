@@ -41,7 +41,7 @@ MyProject/
 
 ## 更新 submodule
 
-加入 submodule 其實很單純，不過真正讓我混淆的是之後的更新動作。總歸來說，必須要搞清楚 submodule 在主 repo 當中的被記錄方式，並不是直接將 submodule repo 的 git history 拷貝過來，而是以一個類似指標性質的 submodule link 存在的。submodule 的遠端 repo 如果有其它新的 commit，並不會直接影響主 repo 當中的 submodule link (這就是我混淆的點，因為我遇到專案有另外寫 script 來將 submodule 的更新自動上傳到其它 repo，而我一直以為這是 submodule 的原生功能...)。
+加入 submodule 其實很單純，不過真正讓我混淆的是之後的更新動作。總歸來說，必須要搞清楚 submodule 在主 repo 當中的被記錄方式，並不是直接將 submodule repo 的 git history 拷貝過來，而是以一個類似指標性質的 submodule link 存在的。submodule 的遠端 repo 如果有其它新的 commit，並不會直接影響主 repo 當中的 submodule link (這就是當時令我我混淆的點，因為我接觸到的專案有另外寫 script 來將 submodule 的更新自動上傳到其它 repo，而我一直以為這是 submodule 的原生功能...)。
 
 <!--
 舉例來說，我們以 Repo A 和 Repo B 分別代表主 repo 和將被引入作為 submodule 的 repo，並用 Repo A->B 代表存在在 Repo A 當中的 submodule B。
